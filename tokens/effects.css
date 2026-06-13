@@ -1,0 +1,47 @@
+/* ============================================================
+   THE BRIDGE CENTER — EFFECTS: RADII, SHADOWS, BORDERS, MOTION
+   Soft rounded corners, warm subtle shadows.
+   ============================================================ */
+
+:root {
+  /* --- Corner radii --- */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-pill: 999px;
+  --radius-card: var(--radius-lg);
+
+  /* --- Border widths --- */
+  --border-hair: 1px;
+  --border-thin: 1.5px;
+  --border-thick: 2px;
+
+  /* --- Shadows (warm-tinted, soft) --- */
+  --shadow-xs: 0 1px 2px rgba(20, 34, 72, 0.06);
+  --shadow-sm: 0 2px 6px rgba(20, 34, 72, 0.07), 0 1px 2px rgba(20, 34, 72, 0.05);
+  --shadow-md: 0 8px 20px -6px rgba(20, 34, 72, 0.12), 0 2px 6px rgba(20, 34, 72, 0.06);
+  --shadow-lg: 0 18px 40px -12px rgba(20, 34, 72, 0.18), 0 4px 12px rgba(20, 34, 72, 0.07);
+  --shadow-xl: 0 32px 64px -18px rgba(14, 26, 56, 0.28), 0 8px 20px rgba(20, 34, 72, 0.10);
+  --shadow-accent: 0 14px 30px -10px rgba(194, 132, 28, 0.45);
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+
+  /* --- Focus ring --- */
+  --ring-width: 3px;
+
+  /* --- Motion --- */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);     /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);     /* @kind other */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);  /* @kind other */
+  --dur-fast: 140ms;    /* @kind other */
+  --dur-base: 240ms;    /* @kind other */
+  --dur-slow: 420ms;    /* @kind other */
+  --dur-slower: 700ms;  /* @kind other */
+
+  /* --- Blur (glass) --- */
+  --blur-sm: 6px;   /* @kind other */
+  --blur-md: 14px;  /* @kind other */
+  --blur-lg: 24px;  /* @kind other */
+}

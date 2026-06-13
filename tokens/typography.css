@@ -1,0 +1,53 @@
+/* ============================================================
+   THE BRIDGE CENTER — TYPOGRAPHY TOKENS
+   Display: Bricolage Grotesque (modern, strong character)
+   Body:    Hanken Grotesk (warm, highly readable)
+   Mono:    Space Mono (data / code accents)
+   ============================================================ */
+
+:root {
+  /* --- Families --- */
+  --font-display: "Bricolage Grotesque", "Hanken Grotesk", system-ui, sans-serif;
+  --font-body: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Space Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* --- Weights --- */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* --- Type scale (rem, 16px base) --- */
+  --text-xs:   0.75rem;   /* 12 */
+  --text-sm:   0.875rem;  /* 14 */
+  --text-base: 1rem;      /* 16 */
+  --text-md:   1.125rem;  /* 18 */
+  --text-lg:   1.3125rem; /* 21 */
+  --text-xl:   1.5rem;    /* 24 */
+  --text-2xl:  1.875rem;  /* 30 */
+  --text-3xl:  2.375rem;  /* 38 */
+  --text-4xl:  3rem;      /* 48 */
+  --text-5xl:  3.75rem;   /* 60 */
+  --text-6xl:  4.75rem;   /* 76 */
+
+  /* --- Fluid display sizes (clamp) --- */
+  --display-hero: clamp(2.75rem, 1.4rem + 5.4vw, 5.25rem);     /* @kind other */
+  --display-section: clamp(2rem, 1.3rem + 2.6vw, 3.25rem);    /* @kind other */
+  --display-sub: clamp(1.5rem, 1.15rem + 1.4vw, 2.25rem);     /* @kind other */
+
+  /* --- Line heights --- */
+  --leading-none: 1;
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* --- Letter spacing --- */
+  --tracking-tighter: -0.03em;
+  --tracking-tight: -0.018em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em;
+  --tracking-wider: 0.08em;
+  --tracking-caps: 0.14em; /* eyebrow / overline labels */
+}

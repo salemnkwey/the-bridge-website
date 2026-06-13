@@ -1,0 +1,13 @@
+/* ============================================================
+   THE BRIDGE CENTER — WEBFONTS
+   Loaded from Google Fonts. No brand fonts were supplied, so these
+   were chosen to match the brief: a modern display with strong
+   character + a highly readable body.
+     • Bricolage Grotesque — display / headings
+     • Hanken Grotesk       — body / UI
+     • Space Mono           — data, stats, code accents
+   If you have licensed brand fonts, self-host them and swap the
+   @font-face src URLs below.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:ital,wght@0,400..800;1,400..600&family=Space+Mono:wght@400;700&display=swap");

@@ -1,0 +1,121 @@
+/* ============================================================
+   THE BRIDGE CENTER — COLOR TOKENS
+   Base palette: deep indigo/navy + warm amber-gold + cream.
+   Teal as secondary variant. Warm neutral inks.
+   ============================================================ */
+
+:root {
+  /* --- Indigo / Navy (primary) --- */
+  --indigo-50:  #eff2fa;
+  --indigo-100: #dce3f1;
+  --indigo-200: #b6c3de;
+  --indigo-300: #8598c3;
+  --indigo-400: #546aa3;
+  --indigo-500: #344e85;
+  --indigo-600: #243b6f;
+  --indigo-700: #1b2e5b;
+  --indigo-800: #142248;
+  --indigo-900: #0e1a38;
+  --indigo-950: #091128;
+
+  /* --- Amber / Gold (accent) --- */
+  --gold-50:  #fdf6e9;
+  --gold-100: #fbeccd;
+  --gold-200: #f8dca0;
+  --gold-300: #f4c96f;
+  --gold-400: #efb74c;
+  --gold-500: #e2a33a;
+  --gold-600: #c2841c;
+  --gold-700: #996614;
+  --gold-800: #6f4a12;
+
+  /* --- Cream / warm paper --- */
+  --cream-50:  #fcfaf4;
+  --cream-100: #f7f1e5;
+  --cream-200: #efe6d3;
+  --cream-300: #e3d5bc;
+  --cream-400: #d3c1a0;
+
+  /* --- Warm neutral ink --- */
+  --ink-900: #18160f;
+  --ink-800: #2a261d;
+  --ink-700: #403b30;
+  --ink-600: #585243;
+  --ink-500: #6e685a;
+  --ink-400: #948d7c;
+  --ink-300: #bdb6a6;
+  --ink-200: #ded9cc;
+  --ink-100: #efebe1;
+  --white:   #ffffff;
+
+  /* --- Teal (secondary variant) --- */
+  --teal-50:  #e7f5f1;
+  --teal-100: #c9ebe3;
+  --teal-300: #6cc4b4;
+  --teal-500: #1e9483;
+  --teal-600: #157869;
+  --teal-700: #105f54;
+
+  /* --- Status hues --- */
+  --green-500: #2f8f5b;
+  --green-100: #d8efe1;
+  --red-500:   #c0432f;
+  --red-100:   #f6dcd6;
+  --amber-status-500: var(--gold-500);
+  --amber-status-100: var(--gold-100);
+
+  /* ==========================================================
+     SEMANTIC ALIASES
+     ========================================================== */
+
+  /* Surfaces */
+  --surface-page:     var(--cream-50);
+  --surface-card:     var(--white);
+  --surface-raised:   var(--cream-100);
+  --surface-sunken:   var(--cream-200);
+  --surface-inverse:  var(--indigo-900);
+  --surface-inverse-2:var(--indigo-800);
+  --surface-accent:   var(--gold-500);
+  --surface-accent-soft: var(--gold-100);
+  --surface-teal-soft:   var(--teal-50);
+
+  /* Text */
+  --text-strong:   var(--ink-900);
+  --text-body:     var(--ink-700);
+  --text-muted:    var(--ink-500);
+  --text-faint:    var(--ink-400);
+  --text-inverse:  var(--cream-50);
+  --text-inverse-muted: var(--indigo-200);
+  --text-on-accent: var(--indigo-900);
+  --text-accent:   var(--gold-700);
+  --text-link:     var(--indigo-600);
+
+  /* Brand roles */
+  --primary:         var(--indigo-700);
+  --primary-hover:   var(--indigo-800);
+  --primary-active:  var(--indigo-900);
+  --accent:          var(--gold-500);
+  --accent-hover:    var(--gold-600);
+  --accent-active:   var(--gold-700);
+
+  /* Borders & lines */
+  --border-subtle: var(--ink-200);
+  --border-default: var(--ink-300);
+  --border-strong: var(--ink-400);
+  --border-inverse: color-mix(in srgb, var(--indigo-100) 22%, transparent);
+  --divider: color-mix(in srgb, var(--ink-900) 8%, transparent);
+
+  /* Focus ring */
+  --ring: color-mix(in srgb, var(--gold-500) 70%, var(--indigo-700));
+  --ring-offset: var(--cream-50);
+
+  /* Status semantic */
+  --success: var(--green-500);
+  --success-soft: var(--green-100);
+  --danger: var(--red-500);
+  --danger-soft: var(--red-100);
+  --warning: var(--gold-600);
+  --warning-soft: var(--gold-100);
+  --info: var(--indigo-500);
+  --info-soft: var(--indigo-50);
+}

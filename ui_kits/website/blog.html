@@ -1,0 +1,53 @@
+<!-- @dsCard group="Site web" viewport="1440x900" name="Blog — magazine" subtitle="Article à la une, filtres par catégorie, grille, sidebar (populaires + newsletter) et pagination" -->
+<!-- @startingPoint section="Site web" subtitle="Page blog : à la une, filtres, grille + sidebar, pagination" viewport="1440x900" -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog — The Bridge Center</title>
+<link rel="icon" href="../../assets/mark-navy.png" />
+<link rel="stylesheet" href="../../styles.css" />
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: var(--surface-page); }
+  @keyframes bcFade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes bcRise { from { opacity: 0; transform: translateY(24px) scale(0.98); } to { opacity: 1; transform: none; } }
+  .bc-mobile-menu { animation: bcFade var(--dur-base) var(--ease-out); }
+  .bc-featured:hover .bc-featured-cta i { transform: translateX(4px); }
+  .bc-featured-cta i { transition: transform var(--dur-base) var(--ease-out); }
+
+  @media (max-width: 1080px) {
+    .bc-blog-layout { grid-template-columns: 1fr !important; }
+    .bc-blog-sidebar { position: static !important; display: grid !important; grid-template-columns: 1fr 1fr !important; }
+    .bc-footer-grid { grid-template-columns: 1fr 1fr !important; gap: var(--space-10) !important; }
+  }
+  @media (max-width: 880px) {
+    .bc-desktop-nav { display: none !important; }
+    .bc-mobile-toggle { display: inline-flex !important; }
+    .bc-auth-aside { display: none !important; }
+    [role="dialog"] > div { grid-template-columns: 1fr !important; }
+    .bc-featured { grid-template-columns: 1fr !important; }
+    .bc-featured-img { min-height: 220px !important; }
+  }
+  @media (max-width: 620px) {
+    .bc-blog-grid { grid-template-columns: 1fr !important; }
+    .bc-blog-sidebar { grid-template-columns: 1fr !important; }
+    .bc-footer-grid { grid-template-columns: 1fr !important; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" src="bridge-kit.jsx"></script>
+<script type="text/babel" src="chrome.jsx"></script>
+<script type="text/babel" src="accueil-sections2.jsx"></script>
+<script type="text/babel" src="auth.jsx"></script>
+<script type="text/babel" src="blog.jsx"></script>
+<script type="text/babel" src="blog-app.jsx"></script>
+</body>
+</html>
