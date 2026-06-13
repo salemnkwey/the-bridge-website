@@ -76,9 +76,9 @@ function ContactInfo() {
             {items.map((it) => (
               <div key={it.label} style={{ display: "flex", gap: "var(--space-4)", alignItems: "flex-start" }}>
                 <span style={{ width: 46, height: 46, flex: "0 0 auto", borderRadius: "var(--radius-md)", background: "color-mix(in srgb, var(--gold-500) 22%, transparent)", color: "var(--gold-400)", display: "inline-flex", alignItems: "center", justifyContent: "center" }}><i data-lucide={it.icon} style={{ width: 22, height: 22 }} /></span>
-                <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: 2, minWidth: 0 }}>
                   <span style={{ fontSize: "var(--text-xs)", fontWeight: 700, letterSpacing: "var(--tracking-caps)", textTransform: "uppercase", color: "var(--gold-400)" }}>{it.label}</span>
-                  {it.lines.map((l) => <span key={l} style={{ fontSize: "var(--text-base)", color: "var(--cream-100)", lineHeight: 1.5 }}>{l}</span>)}
+                  {it.lines.map((l) => <span key={l} style={{ fontSize: "var(--text-base)", color: "var(--cream-100)", lineHeight: 1.5, overflowWrap: "anywhere" }}>{l}</span>)}
                 </div>
               </div>
             ))}
