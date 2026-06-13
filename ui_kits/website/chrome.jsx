@@ -26,15 +26,15 @@ function Reveal({ children, delay = 0, y = 22, as = "div", style = {}, ...rest }
 }
 
 function Logo({ variant = "navy", size = 40, wordmark = true }) {
-  const src = variant === "white" ? "../../assets/mark-white.png" : "../../assets/mark-navy.png";
+  const src = variant === "white" ? "../../assets/logo-white.png" : "../../assets/logo-navy.png";
   const wordColor = variant === "white" ? "var(--cream-50)" : "var(--indigo-900)";
   return (
     <a href="index.html" aria-label="The Bridge Center — accueil" style={{ display: "inline-flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
       <img src={src} alt="" width={size} height={size} style={{ width: size, height: size, objectFit: "contain" }} />
       {wordmark && (
-        <span style={{ display: "flex", flexDirection: "column", lineHeight: 1 }}>
-          <span style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-extrabold)", fontSize: "var(--text-md)", letterSpacing: "var(--tracking-tight)", color: wordColor }}>The Bridge Center</span>
-          <span style={{ fontFamily: "var(--font-mono)", fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase", color: variant === "white" ? "var(--gold-400)" : "var(--gold-600)", marginTop: 3 }}>Cours d'anglais · En ligne &amp; en présentiel</span>
+        <span style={{ display: "flex", flexDirection: "column", lineHeight: 1.05, fontFamily: "var(--font-display)", fontWeight: "var(--weight-extrabold)", fontSize: "var(--text-md)", letterSpacing: "var(--tracking-tight)", color: wordColor }}>
+          <span>The Bridge</span>
+          <span>Center</span>
         </span>
       )}
     </a>
