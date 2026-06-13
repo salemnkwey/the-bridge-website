@@ -113,7 +113,7 @@ function MapPlaceholder() {
   return (
     <section style={{ background: "var(--surface-card)", padding: "0 0 var(--section-y)" }}>
       <div className="bridge-container">
-        <div style={{ position: "relative", borderRadius: "var(--radius-xl)", overflow: "hidden", boxShadow: "var(--shadow-md)", border: "1px solid var(--border-subtle)", aspectRatio: "21 / 7", minHeight: 280, backgroundImage: "url(../../assets/tex-indigo.png)", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div style={{ position: "relative", width: "100%", borderRadius: "var(--radius-xl)", overflow: "hidden", boxShadow: "var(--shadow-md)", border: "1px solid var(--border-subtle)", aspectRatio: "21 / 7", minHeight: 280, backgroundImage: "url(../../assets/tex-indigo.png)", backgroundSize: "cover", backgroundPosition: "center" }}>
           <div style={{ position: "absolute", inset: 0, background: "color-mix(in srgb, var(--indigo-950) 30%, transparent)" }} />
           {/* faux map grid */}
           <div aria-hidden="true" style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(color-mix(in srgb,var(--cream-50) 12%,transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb,var(--cream-50) 12%,transparent) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
